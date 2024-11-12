@@ -11,10 +11,15 @@ body::before {
     inset: 0;
     margin: -15px;
     z-index: -1;
-    background-image: url("../img/Mahiru/mahiru.jpg");
+    background-image: url("../img/mahiru/mahiru.jpg");
     /* background: linear-gradient(to bottom, #c0e5be, #f4c4ca); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    filter: blur(3px);
+    /* filter: blur(3px); */
+}
+img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
 }
