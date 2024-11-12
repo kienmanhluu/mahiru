@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    margin: -15px;
+    z-index: -1;
+    background-color: #5a5a5a;
+    background-image: url("../img/Mahiru/mahiru.jpg");
+    /* background: linear-gradient(to bottom, #c0e5be, #f4c4ca); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);
+}
