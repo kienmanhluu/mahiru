@@ -1,10 +1,15 @@
+/* Cấu hình cơ bản cho body */
 body {
     margin: 0;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
     display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    background: linear-gradient(135deg, #74ebd5, #acb6e5); /* Nền gradient */
+    position: relative;
 }
 
+/* Cấu hình hình nền */
 body::before {
     content: "";
     position: fixed;
@@ -12,14 +17,150 @@ body::before {
     margin: -15px;
     z-index: -1;
     background-image: url("../img/mahiru/mahiru.jpg");
-    /* background: linear-gradient(to bottom, #c0e5be, #f4c4ca); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /* filter: blur(3px); */
 }
-img {
-    width: 200px;
-    height: 200px;
+
+/* Cấu hình hình avatar */
+.avatar-container {
+    position: absolute;
+    z-index: 1;
+}
+
+/* Avatar đầu tiên */
+.first-avatar {
+    top: 45px;
+    left: 45px;
+}
+
+.first-avatar .avatar {
+    width: 150px;  /* Kích thước avatar đầu tiên */
+    height: 150px; /* Kích thước avatar đầu tiên */
+    border-radius: 50%; /* Tạo hình tròn */
     object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
+
+/* Avatar thứ hai */
+.second-avatar {
+    top: 250px;
+    left: 100px;  /* Vị trí avatar thứ hai */
+}
+
+.second-avatar .avatar {
+    width: 50px; /* Kích thước avatar thứ hai */
+    height: 50px; /* Kích thước avatar thứ hai */
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Avatar thứ ba */
+.third-avatar {
+    top: 250px;
+    left: 160px;  /* Vị trí avatar thứ ba */
+}
+
+.third-avatar .avatar {
+    width: 50px; /* Kích thước avatar thứ ba */
+    height: 50px; /* Kích thước avatar thứ ba */
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Avatar thứ tư */
+.fourth-avatar {
+    top: 250px;
+    left: 220px;  
+}
+
+.fourth-avatar .avatar {
+    width: 50px; /* Kích thước avatar thứ tư */
+    height: 50px; /* Kích thước avatar thứ tư */
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Avatar thứ năm */
+.fifth-avatar {
+    top: 250px;
+    left: 280px; /* Vị trí avatar thứ năm */
+}
+
+.fifth-avatar .avatar {
+    width: 50px;  /* Kích thước avatar thứ năm */
+    height: 50px; /* Kích thước avatar thứ năm */
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Hình pill glassmorphism */
+.pill-glassmorphism {
+    display: inline-block;
+    padding: 100px 200px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 300px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+
+/* Hình vuông glassmorphism */
+.square-glassmorphism {
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    position: absolute;
+    top: 5px;
+    left: 1200px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+/* Hình vuông thứ hai */
+.second-square {
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    position: absolute;
+    top: 5px;
+    left: 860px;  /* Điều chỉnh vị trí của hình vuông thứ hai */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+/* Hình vuông thứ ba */
+.third-square {
+    width: 265px;
+    height: 65px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 230px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    position: absolute;
+    top: 219px;
+    left: 80px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
