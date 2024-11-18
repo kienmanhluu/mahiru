@@ -16,7 +16,7 @@ body::before {
     inset: 0;
     margin: -15px;
     z-index: -1;
-    background-image: url("./img/mahiru/mahiru bg.jpg");
+    background-image: url("https://github.com/kienmanhluu/mahiru/blob/main/img/mahiru/mahiru%20bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
